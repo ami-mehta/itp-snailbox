@@ -1,0 +1,14 @@
+html,
+body {
+  background-color: #222222;
+  font-size: 2em;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+#title {
+  color: #bfff00e2;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 3vw;
+  position: top;
+}

@@ -7,23 +7,25 @@ function setup() {
   myBLE = new p5ble();
 
   // Create a 'Pair/ Connect' button
-  const connectButton = createButton("Pair");
+  const connectButton = createButton("1. Pair With Me...");
   connectButton.mousePressed(connectToBle);
-  connectButton.position(15, 65);
+  connectButton.position(45, 200);
 
   // Create a text input for messages
   input = createInput();
-  input.position(15, 100);
+  input.position(45, 250);
   // input.size(200, 200);
 
   // Create a 'Write Messages' button
-  const writeButton = createButton("Leave Message");
-  writeButton.position(input.x + input.width + 15, 100);
+  const writeButton = createButton("2. Leave A Message");
+  // let col = color(25, 23, 200, 50);
+  writeButton.position(input.x + input.width, 250);
   writeButton.mousePressed(writeToBle);
+  // writeButton.style(col);
 
   // Create a 'Check Messages' button
-  const checkButton = createButton("Check Messages");
-  // checkButton.position(input.x + input.width + 15, 200);
+  const checkButton = createButton("3. Check Messages!");
+  checkButton.position(45, 300);
   checkButton.mousePressed(checkMessages);
 }
 
